@@ -1,12 +1,12 @@
 import UIKit
 
+public struct ImageItem {
+    let image: UIImage?
+    let url: String?
+}
+
 public struct ImageViewer {
     private init() {}
-    
-    public struct ImageItem {
-        let image: UIImage? = nil
-        let url: String? = nil
-    }
     
     public static func show(imagesArray: [ImageItem], startIndex: Int = 0, font: UIFont? = UIFont.systemFont(ofSize: 16, weight: .medium), handler: ((Int) -> Void)? = nil) {
         var index = startIndex

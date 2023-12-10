@@ -15,7 +15,7 @@ protocol ImagePageViewControllerDelegate {
 class ImagePageViewController: UIPageViewController {
     
     var currentIndex: Int = 0
-    private var imagesArray: [ImageViewer.ImageItem] = []
+    private var imagesArray: [ImageItem] = []
     private var imageViewCons: [UIViewController] = []
     var imagePageViewDelegate: ImagePageViewControllerDelegate?
 
@@ -28,7 +28,7 @@ class ImagePageViewController: UIPageViewController {
         initImageViewCons()
     }
     
-    func setImages(_ imagesArray: [ImageViewer.ImageItem]) {
+    func setImages(_ imagesArray: [ImageItem]) {
         self.imagesArray = imagesArray
     }
     
