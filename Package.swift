@@ -24,8 +24,7 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "ImageViewer",
-            dependencies: ["SDWebImage"],
-            resources: [.copy("Storyboards")]),
+            dependencies: ["SDWebImage"]),
         .testTarget(
             name: "ImageViewerTests",
             dependencies: ["ImageViewer"]),
