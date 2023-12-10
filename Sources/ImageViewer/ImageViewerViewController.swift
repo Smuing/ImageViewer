@@ -12,7 +12,7 @@ class ImageViewerViewController: UIViewController {
     private var imagePageViewController: ImagePageViewController!
     var imagesArray: Array<String> = []
     var currentIndex: Int = 0
-    var font: UIFont!
+    var font: UIFont = UIFont.systemFont(ofSize: 16, weight: .medium)
     private var handler: ((Int) -> Void)?
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var prevButtonView: UIView!
