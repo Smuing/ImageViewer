@@ -12,7 +12,7 @@
         <!--Image Viewer View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="ImageViewerViewController" id="Y6W-OH-hqX" customClass="ImageViewerViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageViewerViewController" id="Y6W-OH-hqX" customClass="ImageViewerViewController" customModule="ImageViewer" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,7 +138,7 @@
         <!--Image View Controller-->
         <scene sceneID="YKN-cq-SVX">
             <objects>
-                <viewController storyboardIdentifier="ImageViewController" id="U6K-tF-Ipd" customClass="ImageViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageViewController" id="U6K-tF-Ipd" customClass="ImageViewController" customModule="ImageViewer" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZsA-Vy-qgW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,7 +196,7 @@
         <!--Image Page View Controller-->
         <scene sceneID="rDJ-TW-wpU">
             <objects>
-                <pageViewController storyboardIdentifier="ImagePageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Zri-20-liR" customClass="ImagePageViewController" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="ImagePageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Zri-20-liR" customClass="ImagePageViewController" customModule="ImageViewer" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lrf-6b-1HX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="48" y="789"/>
