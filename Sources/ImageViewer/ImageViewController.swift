@@ -21,7 +21,7 @@ class ImageViewController: UIViewController {
     var delegate: ImageViewControllerDelegate?
     
     static func getInstance(_ image: String) -> ImageViewController {
-        let vc = UIStoryboard(name: "ImageViewer", bundle: nil).instantiateViewController(withIdentifier: "ImageViewController") as! ImageViewController
+        let vc = UIStoryboard(name: "ImageViewer", bundle: Bundle.module).instantiateViewController(withIdentifier: "ImageViewController") as! ImageViewController
         vc.image = image
         return vc
     }
