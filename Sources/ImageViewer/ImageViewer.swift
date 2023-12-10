@@ -14,7 +14,7 @@ public struct ImageViewer {
             index = imagesArray.count - 1
         }
         DispatchQueue.main.async {
-            if let naviCon = UIStoryboard(name: "ImageViewer", bundle: nil).instantiateViewController(withIdentifier: "ImageViewerViewController") as? ImageViewerViewController {
+            if let naviCon = UIStoryboard(name: "ImageViewer", bundle: Bundle.module).instantiateViewController(withIdentifier: "ImageViewerViewController") as? ImageViewerViewController {
                 naviCon.modalPresentationStyle = .overFullScreen
                 naviCon.imagesArray = imagesArray
                 naviCon.currentIndex = index
