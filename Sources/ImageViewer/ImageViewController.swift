@@ -16,13 +16,15 @@ class ImageViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
-    private var image: String = ""
+    private var image: UIImage?
+    private var url: String?
     var index: Int = 0
     var delegate: ImageViewControllerDelegate?
     
-    static func getInstance(_ image: String) -> ImageViewController {
+    static func getInstance(_ image: UIImage?, _ url: String?) -> ImageViewController {
         let vc = UIStoryboard(name: "ImageViewer", bundle: Bundle.module).instantiateViewController(withIdentifier: "ImageViewController") as! ImageViewController
         vc.image = image
+        vc.url = url
         return vc
     }
     
@@ -48,22 +50,19 @@ class ImageViewController: UIViewController {
     }
     
     func config() {
-        self.imageView.sd_setImage(with: URL(string: image), placeholderImage: UIImage(named: "placeholderImage"), completed: {
-            image, error, cacheType, imageURL in
-            if image != nil, error == nil {
-                self.scrollView.delegate = self
-                self.scrollView.zoomScale = 1.0
-                self.scrollView.minimumZoomScale = 1.0
-                self.scrollView.maximumZoomScale = 2.0
-                let newContentOffsetX = (self.scrollView.contentSize.width/2) - (self.scrollView.bounds.size.width/2)
-                self.scrollView.contentOffset = CGPointMake(newContentOffsetX, 0)
-            }
-       })
+        if let image = self.image {
+            self.imageView.image = image
+        }
+        if let url = self.url {
+            self.imageView.sd_setImage(with: URL(string: url), placeholderImage: UIImage(named: "placeholderImage"))
+        }
+        self.scrollView.delegate = self
+        self.scrollView.zoomScale = 1.0
+        self.scrollView.minimumZoomScale = 1.0
+        self.scrollView.maximumZoomScale = 2.0
+        let newContentOffsetX = (self.scrollView.contentSize.width/2) - (self.scrollView.bounds.size.width/2)
+        self.scrollView.contentOffset = CGPointMake(newContentOffsetX, 0)
         
-    }
-    
-    func setImage(_ image: String) {
-        self.image = image
     }
     
     @objc func didTapView(_ sender: UITapGestureRecognizer) {
