@@ -12,7 +12,7 @@
         <!--Image Viewer View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="ImageViewerViewController" id="Y6W-OH-hqX" customClass="ImageViewerViewController" customModule="ImageViewer" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageViewerViewController" id="Y6W-OH-hqX" customClass="ImageViewerViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,7 +46,7 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="iconClose24"/>
                                         <connections>
-                                            <action selector="closeButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="N0e-lg-HfN"/>
+                                            <action selector="closeButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xli-UN-ctB"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -69,7 +69,7 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="iconLeftArrow24"/>
                                         <connections>
-                                            <action selector="prevButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Xn4-hv-LE0"/>
+                                            <action selector="prevButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="D11-mQ-vYc"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -92,7 +92,7 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="iconRightArrow24"/>
                                         <connections>
-                                            <action selector="nextButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Bqr-S9-FEt"/>
+                                            <action selector="nextButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nTy-WQ-Fca"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -124,11 +124,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="nextButton" destination="Dzd-op-RKx" id="7p4-MI-8yr"/>
-                        <outlet property="nextButtonView" destination="C4L-GE-6HJ" id="gyc-1W-PWC"/>
-                        <outlet property="numberLabel" destination="YWn-f4-rUW" id="x9F-5f-jL0"/>
-                        <outlet property="prevButton" destination="OeO-BN-ojr" id="kL3-J4-9dC"/>
-                        <outlet property="prevButtonView" destination="tk2-yr-AdJ" id="ecp-6g-jj3"/>
+                        <outlet property="nextButton" destination="Dzd-op-RKx" id="Ipu-i2-rS9"/>
+                        <outlet property="nextButtonView" destination="C4L-GE-6HJ" id="caf-IM-KuX"/>
+                        <outlet property="numberLabel" destination="YWn-f4-rUW" id="CZr-sK-gpP"/>
+                        <outlet property="prevButton" destination="OeO-BN-ojr" id="dSD-l9-Qas"/>
+                        <outlet property="prevButtonView" destination="tk2-yr-AdJ" id="B7d-38-BeM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -138,7 +138,7 @@
         <!--Image View Controller-->
         <scene sceneID="YKN-cq-SVX">
             <objects>
-                <viewController storyboardIdentifier="ImageViewController" id="U6K-tF-Ipd" customClass="ImageViewController" customModule="ImageViewer" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageViewController" id="U6K-tF-Ipd" customClass="ImageViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZsA-Vy-qgW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -185,8 +185,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="Frw-yN-wMc" id="72G-Mt-3uZ"/>
-                        <outlet property="scrollView" destination="7E6-G1-KZA" id="ngb-lW-oXS"/>
+                        <outlet property="imageView" destination="Frw-yN-wMc" id="bdY-Vd-B7o"/>
+                        <outlet property="scrollView" destination="7E6-G1-KZA" id="v6f-RM-rQh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SFV-Ew-K8x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -196,7 +196,7 @@
         <!--Image Page View Controller-->
         <scene sceneID="rDJ-TW-wpU">
             <objects>
-                <pageViewController storyboardIdentifier="ImagePageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Zri-20-liR" customClass="ImagePageViewController" customModule="ImageViewer" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="ImagePageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Zri-20-liR" customClass="ImagePageViewController" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lrf-6b-1HX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="48" y="789"/>
