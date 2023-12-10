@@ -10,7 +10,7 @@ import UIKit
 class ImageViewerViewController: UIViewController {
     
     private var imagePageViewController: ImagePageViewController!
-    var imagesArray: [ImageItem] = []
+    var imagesArray: [ImageViewer.ImageItem] = []
     var currentIndex: Int = 0
     var font: UIFont!
     private var handler: ((Int) -> Void)?
