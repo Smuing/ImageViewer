@@ -1,6 +1,8 @@
 import UIKit
 
 public struct ImageItem {
+    private init() {}
+    
     let image: UIImage? = nil
     let url: String? = nil
 }
