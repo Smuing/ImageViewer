@@ -135,10 +135,10 @@
             </objects>
             <point key="canvasLocation" x="48" y="19"/>
         </scene>
-        <!--View Controller-->
+        <!--Image View Controller-->
         <scene sceneID="YKN-cq-SVX">
             <objects>
-                <viewController id="U6K-tF-Ipd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageViewController" id="U6K-tF-Ipd" customClass="ImageViewController" customModule="ImageViewer" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZsA-Vy-qgW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,15 +184,19 @@
                             <constraint firstItem="Vku-XE-Puf" firstAttribute="leading" secondItem="lVb-7o-80o" secondAttribute="leading" id="cyj-uZ-DoU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Frw-yN-wMc" id="72G-Mt-3uZ"/>
+                        <outlet property="scrollView" destination="7E6-G1-KZA" id="ngb-lW-oXS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SFV-Ew-K8x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="871" y="18"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Image Page View Controller-->
         <scene sceneID="rDJ-TW-wpU">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Zri-20-liR" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="ImagePageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Zri-20-liR" customClass="ImagePageViewController" customModule="ImageViewer" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lrf-6b-1HX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="48" y="789"/>
