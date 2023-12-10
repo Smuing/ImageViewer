@@ -3,7 +3,7 @@ import UIKit
 public struct ImageViewer {
     private init() {}
     
-    public static func show(imagesArray: Array<String>, startIndex: Int = 0, font: UIFont = UIFont.systemFont(ofSize: 16, weight: .medium), handler: ((Int) -> Void)? = nil) {
+    public static func show(imagesArray: Array<String>, startIndex: Int = 0, font: UIFont? = UIFont.systemFont(ofSize: 16, weight: .medium), handler: ((Int) -> Void)? = nil) {
         var index = startIndex
         if imagesArray.count <= 0 {
             return
@@ -18,7 +18,7 @@ public struct ImageViewer {
                 naviCon.modalPresentationStyle = .overFullScreen
                 naviCon.imagesArray = imagesArray
                 naviCon.currentIndex = index
-                naviCon.font = font
+                naviCon.font = font ?? UIFont.systemFont(ofSize: 16, weight: .medium)
                 naviCon.callBackHandler(handler)
                 UIApplication.topViewController()?.present(naviCon, animated: true)
             }

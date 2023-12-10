@@ -45,6 +45,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="iconClose24"/>
+                                        <connections>
+                                            <action selector="closeButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="N0e-lg-HfN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -65,6 +68,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="iconLeftArrow24"/>
+                                        <connections>
+                                            <action selector="prevButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Xn4-hv-LE0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.16078431369999999" green="0.16078431369999999" blue="0.16862745100000001" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
@@ -85,6 +91,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="iconRightArrow24"/>
+                                        <connections>
+                                            <action selector="nextButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Bqr-S9-FEt"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.16078431369999999" green="0.16078431369999999" blue="0.16862745100000001" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
@@ -114,6 +123,13 @@
                             <constraint firstItem="tk2-yr-AdJ" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="p78-js-DId"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="Dzd-op-RKx" id="7p4-MI-8yr"/>
+                        <outlet property="nextButtonView" destination="C4L-GE-6HJ" id="gyc-1W-PWC"/>
+                        <outlet property="numberLabel" destination="YWn-f4-rUW" id="x9F-5f-jL0"/>
+                        <outlet property="prevButton" destination="OeO-BN-ojr" id="kL3-J4-9dC"/>
+                        <outlet property="prevButtonView" destination="tk2-yr-AdJ" id="ecp-6g-jj3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
