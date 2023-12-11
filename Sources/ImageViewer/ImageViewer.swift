@@ -1,8 +1,13 @@
 import UIKit
 
 public struct ImageItem {
-    var image: UIImage?
-    var url: String?
+    let image: UIImage?
+    let url: String?
+    
+    public init(image: UIImage? = nil, url: String? = nil) {
+        self.image = image
+        self.url = url
+    }
 }
 
 public struct ImageViewer {
