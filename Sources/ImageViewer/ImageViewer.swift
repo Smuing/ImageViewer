@@ -1,8 +1,8 @@
 import UIKit
 
 public struct ImageItem {
-    public let image: UIImage?
-    public let url: String?
+    var image: UIImage?
+    var url: String?
 }
 
 public struct ImageViewer {
